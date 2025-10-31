@@ -14,14 +14,16 @@
 
 ```
 src/
+ ├── _test_/           # Unit tests
+ ├── assets/           # Images, icons, static assets
  ├── components/       # Reusable UI components (UserCard, UserModal, etc.)
  ├── pages/            # Page-level views (UserListPage)
  ├── store/            # Zustand store (useUserStore)
  ├── types/            # TypeScript types
  ├── utils/            # API Handler
- ├── _test_/           # Unit tests
+ ├── App.tsx           # Root component
  ├── main.tsx          # Entry point
- └── App.tsx           # Root component
+ └── setupTests.ts     # Jest + RTL setup
 ```
 
 ---
@@ -36,8 +38,9 @@ src/
 | State Management | [Zustand](https://zustand-demo.pmnd.rs/) |
 | UI Library | [Ant Design](https://ant.design/) |
 | Styling | [Tailwind CSS](https://tailwindcss.com/) |
-| Testing | [Jest](https://jestjs.io/) or [Vitest](https://vitest.dev/) |
+| Testing | [Jest](https://jestjs.io/) |
 | Package Manager | npm / pnpm / yarn |
+| Deployment | [Vercel](https://vercel.com/) |
 
 ---
 
@@ -59,7 +62,7 @@ src/
    npm run dev
 
    npm run dev -- --host
-   run with local network 
+   /*run with local network*/
    ```
 
 4. **Open the app**
@@ -79,6 +82,15 @@ This project includes basic unit tests using **Jest**.
 ```bash
 npx jest
 ```
+
+---
+
+## 🚀 Deploy
+
+Every time you push to the devel branch,
+Vercel automatically rebuilds and deploys your app.
+
+---
 
 ## 💅 Code Style & Linting
 
