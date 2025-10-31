@@ -26,6 +26,7 @@ export const UserListPage = () => {
                 </h1>
                 <div className="w-full sm:w-auto flex justify-center sm:justify-end">
                     <Button
+                        data-testid="add-user-btn"
                         type="primary"
                         size="large"
                         className="w-full sm:w-auto !rounded-lg !px-6 !py-2 !text-base"

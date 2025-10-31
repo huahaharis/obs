@@ -79,3 +79,4 @@ logs/
 # ---------------------------------------------------
 .github/workflows/*.tmp
 .github/workflows/*.bak
+.vercel
