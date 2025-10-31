@@ -8,16 +8,11 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
-    "test": "jest"
-  },
-  "jest": {
-    "testEnvironment": "jsdom",
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/setupTests.ts"
-    ]
+    "test": "jest --watchAll"
   },
   "dependencies": {
     "@ant-design/icons": "^6.1.0",
+    "@testing-library/user-event": "^14.6.1",
     "antd": "^4.24.3",
     "axios": "^1.13.0",
     "react": "^19.2.0",
